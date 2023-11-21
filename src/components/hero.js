@@ -1,6 +1,7 @@
 import { graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import * as React from "react"
+import { heroImage } from "./hero.css"
 import {
   Box,
   ButtonList,
@@ -23,6 +24,7 @@ export default function Hero(props) {
               <GatsbyImage
                 alt={props.image.alt}
                 image={getImage(props.image.gatsbyImageData)}
+                className={heroImage}
               />
             )}
           </Box>
