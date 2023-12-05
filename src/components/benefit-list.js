@@ -38,7 +38,7 @@ export default function BenefitList(props) {
         </Box>
         <Space size={3} />
         <FlexList gutter={3} variant="start" responsive wrap>
-          {props.content.map((benefit) => (
+          {props.content?.map((benefit) => (
             <Benefit key={benefit.id} {...benefit} />
           ))}
         </FlexList>
