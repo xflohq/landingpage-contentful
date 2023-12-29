@@ -2,16 +2,13 @@ import * as React from "react"
 import {
   Container,
   Flex,
-  FlexList,
   Box,
   Space,
-  NavLink,
-  Text,
-  IconLink,
-  VisuallyHidden,
 } from "./ui"
 
 export default function ContactUs() {
+
+  const formRef = React.useRef(null);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -30,18 +27,13 @@ export default function ContactUs() {
       .catch((error) => alert(error));
   };
 
-  React.useEffect(() => {
-    document
-    .querySelector("form")
-    .addEventListener("submit", handleSubmit);
-  }, [])
 
 
   return (
     <Box as="contact-us" paddingY={4}>
       <Container>
         <Flex variant="start" responsive>
-        <form name="contact" method="POST" data-netlify="true" onSubmit={handleSubmit}>
+        <form ref={formRef} name="contact" method="POST" data-netlify="true" onSubmit={handleSubmit}>
             <input type="hidden" name="form-name" value="contact" />
             <p>
               <label>Your Name: <input type="text" name="name" /></label>
