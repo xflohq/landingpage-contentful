@@ -24,36 +24,38 @@ export default function ContactUs() {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData).toString(),
     })
-    .then(() => alert("Thank you for your submission"))
+    .then(() => alert("Thank you for contacting us. One of our colleagues will get back in touch with you soon!Have a great day!"))
     // .then((result) => console.log('result', result))
      // .then(() => navigate("/thank-you/"))
       .catch((error) => alert(error));
   };
 
-  document
-  .querySelector("form")
-  .addEventListener("submit", handleSubmit);
+  React.useEffect(() => {
+    document
+    .querySelector("form")
+    .addEventListener("submit", handleSubmit);
+  }, [])
+
 
   return (
     <Box as="contact-us" paddingY={4}>
       <Container>
         <Flex variant="start" responsive>
-        <form name="contact-us" method="POST" data-netlify="true" 
-    onSubmit={handleSubmit}>
-      <input type="hidden" name="form-name" value="contact-us" />
-  <p>
-    <label>Your Name: <input type="text" name="name" /></label>
-  </p>
-  <p>
-    <label>Your Email: <input type="email" name="email" /></label>
-  </p>
-  <p>
-    <label>Message: <textarea name="message"></textarea></label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
-</form>
+        <form name="contact" method="POST" data-netlify="true" onSubmit={handleSubmit}>
+            <input type="hidden" name="form-name" value="contact" />
+            <p>
+              <label>Your Name: <input type="text" name="name" /></label>
+            </p>
+            <p>
+              <label>Your Email: <input type="email" name="email" /></label>
+            </p>
+            <p>
+              <label>Message: <textarea name="message"></textarea></label>
+            </p>
+            <p>
+              <button type="submit">Send</button>
+            </p>
+        </form>
         </Flex>
         
       </Container>
