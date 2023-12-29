@@ -1,7 +1,8 @@
 import { graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import * as React from "react"
-import { heroImage } from "./hero.css"
+import { Slice } from "gatsby"
+import { heroImage, sectionStyle, containerStyle } from "./hero.css"
 import {
   Box,
   ButtonList,
@@ -16,8 +17,9 @@ import {
 
 export default function Hero(props) {
   return (
-    <Section>
-      <Container>
+    <Section className={sectionStyle}>
+      <Slice alias="header" />
+      <Container className={containerStyle}>
         <Flex gap={4} variant="responsive">
           <Box width="half">
             {props.image && (

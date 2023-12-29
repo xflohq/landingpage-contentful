@@ -622,5 +622,9 @@ exports.createPages = ({ actions }) => {
     id: "footer",
     component: require.resolve("./src/components/footer.js"),
   })
+  createSlice({
+    id: "contact-us",
+    component: require.resolve("./src/components/contact-us.js"),
+  })
 }
       

@@ -103,7 +103,9 @@ export function Nudge({ left, right, top, bottom, ...props }) {
 }
 
 export function Section(props) {
-  return <Box as="section" className={styles.section} {...props} />
+  return (<Box as="section" className={styles.section} {...props}>
+    {props.children}
+  </Box>)
 }
 
 export function Text({
