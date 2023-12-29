@@ -30,23 +30,22 @@ export default function ContactUs() {
       .catch((error) => alert(error));
   };
 
+  document
+  .querySelector("form")
+  .addEventListener("submit", handleSubmit);
+
   return (
     <Box as="contact-us" paddingY={4}>
       <Container>
         <Flex variant="start" responsive>
-        <form name="contact" method="POST" data-netlify="true" 
+        <form name="contact-us" method="POST" data-netlify="true" 
     onSubmit={handleSubmit}>
+      <input type="hidden" name="form-name" value="contact-us" />
   <p>
     <label>Your Name: <input type="text" name="name" /></label>
   </p>
   <p>
     <label>Your Email: <input type="email" name="email" /></label>
-  </p>
-  <p>
-    <label>Your Role: <select name="role[]" multiple>
-      <option value="leader">Leader</option>
-      <option value="follower">Follower</option>
-    </select></label>
   </p>
   <p>
     <label>Message: <textarea name="message"></textarea></label>
