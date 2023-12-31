@@ -71,7 +71,7 @@ export default function Header() {
   }, [isOpen])
 
   return (
-    <header >
+    <header style={{ background: "#0e0f18" }}>
       <Container className={desktopHeaderNavWrapper}>
         <Space size={2} />
         <Flex variant="spaceBetween">
