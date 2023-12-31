@@ -18,7 +18,7 @@ import {
 export default function Hero(props) {
   return (
     <Section className={sectionStyle}>
-      <Slice alias="header" />
+      {/*<Slice alias="header" />*/}
       <Container className={containerStyle}>
         <Flex gap={4} variant="responsive">
           <Box width="half">

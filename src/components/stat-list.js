@@ -26,7 +26,7 @@ function Stat(props) {
 
 export default function StatList(props) {
   return (
-    <Container width="fullbleed">
+    <Container width="fullbleed" id="stats">
       <Section padding={5} radius="large" background="primary">
         <Flex responsive variant="end">
           <Box width="half">

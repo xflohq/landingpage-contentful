@@ -17,14 +17,19 @@ export const heroImage = style({
 })
 
 export const sectionStyle = style({
-  //background: "#000000",
-	// background: "linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)",
-	// backgroundSize: "400% 400%",
-	animation: `${gradient} 45s ease infinite`,
-	// height: "100vh",
-  // color: "#FFFFFF"
+  background: "#0e0f18",
+ // background: "#0d131e",
+// background: "linear-gradient(#fff,#eef1f5 87%)",
+	//background: "linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)",
+  // background: "linear-gradient(-45deg, #ee7752, #e73c7e, #111827, #0d131e)",
+	backgroundSize: "400% 400%",
+	// animation: `${gradient} 45s ease infinite`,
+	// height: "75vh",
+  color: "#FFFFFF"
 })
 
 export const containerStyle = style({
-  marginTop: 30
+  // marginTop: 30
+  paddingTop: 50,
+  paddingBottom: 50
 })

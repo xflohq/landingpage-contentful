@@ -71,16 +71,20 @@ export default function Header() {
   }, [isOpen])
 
   return (
-    <header>
+    <header >
       <Container className={desktopHeaderNavWrapper}>
         <Space size={2} />
         <Flex variant="spaceBetween">
           <NavLink to="/">
             <VisuallyHidden>Home</VisuallyHidden>
             <BrandLogo />
+            <span style={{ marginLeft: 10, fontSize: 30, fontWeight: 800 }}>xflo</span>
           </NavLink>
           <nav>
             <FlexList gap={4}>
+              <NavLink to='#features'>Product</NavLink>
+              <NavLink to='#solution'>Solution</NavLink>
+              <NavLink to='#stats'>About Us</NavLink>
               {false && navItems &&
                 navItems.map((navItem) => (
                   <li key={navItem.id}>
@@ -96,7 +100,8 @@ export default function Header() {
                 ))}
             </FlexList>
           </nav>
-          <div>{cta && <Button to={cta.href}>{cta.text}</Button>}</div>
+          <div>{cta && <Button to="#contact-us">{cta.text}</Button>}</div>
+          {/*<div>{cta && <Button to={cta.href}>{cta.text}</Button>}</div>*/}
         </Flex>
       </Container>
       <Container className={mobileHeaderNavWrapper[isOpen ? "open" : "closed"]}>
@@ -110,6 +115,7 @@ export default function Header() {
             <NavLink to="/">
               <VisuallyHidden>Home</VisuallyHidden>
               <BrandLogo />
+            <span style={{ marginLeft: 10, fontSize: 30, fontWeight: 800 }}>xflo</span>
             </NavLink>
           </span>
           <Flex>
@@ -139,7 +145,10 @@ export default function Header() {
         <div className={mobileNavOverlay}>
           <nav>
             <FlexList responsive variant="stretch">
-              {navItems?.map((navItem) => (
+              <li><NavLink to='#features'  className={mobileNavLink}>Product</NavLink></li>
+              <li><NavLink to='#solution'  className={mobileNavLink}>Solution</NavLink></li>
+              <li><NavLink to='#stats'  className={mobileNavLink}>About Us</NavLink></li>
+              {false && navItems?.map((navItem) => (
                 <li key={navItem.id}>
                   {navItem.navItemType === "Group" ? (
                     <NavItemGroup

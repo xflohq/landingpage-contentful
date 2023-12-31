@@ -31,7 +31,7 @@ function Benefit(props) {
 export default function BenefitList(props) {
   return (
     <Section>
-      <Container>
+      <Container id="benefits">
         <Box center>
           {props.heading && <Heading>{props.heading}</Heading>}
           {props.text && <Text variant="lead">{props.text}</Text>}

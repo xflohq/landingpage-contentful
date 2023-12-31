@@ -420,13 +420,21 @@ export const link = style({
 })
 
 export const navlink = style({
-  color: "inherit",
+  // color: "inherit",
+  //color: theme.colors.active,
+  color: '#FFF',
   textDecoration: "none",
   transitionProperty: "color",
   transitionDuration: "0.2s",
   transitionTimingFunction: "ease-in-out",
+  // fontSize: 30,
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'space-between',
+  // fontWeight: 800,
   ":hover": {
-    color: theme.colors.active,
+    // color: theme.colors.active,
+    color: '#fff'
   },
 })
 
@@ -611,6 +619,7 @@ export const interactiveIcon = style({
   cursor: "pointer",
   width: 48,
   height: 48,
+  color:"#FFF"
 })
 
 export const visuallyHidden = style({

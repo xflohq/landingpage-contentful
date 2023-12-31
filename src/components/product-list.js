@@ -31,10 +31,9 @@ function Product(props) {
 }
 
 export default function ProductList(props) {
-  console.log('props', props)
   return (
     <Section>
-      <Container>
+      <Container id="solution">
         <Box center paddingY={4}>
           <Subhead>
             {props.kicker && <Kicker>{props.kicker}</Kicker>}
