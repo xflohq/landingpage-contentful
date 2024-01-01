@@ -10,6 +10,7 @@ const gradient = keyframes({
 
 export const heroImage = style({
   borderRadius: "16px 16px 120px 16px",
+  boxShadow: '12px 13px #70e776',
   "@media": {
     [media.small]: {
     },
@@ -31,5 +32,16 @@ export const sectionStyle = style({
 export const containerStyle = style({
   // marginTop: 30
   paddingTop: 50,
-  paddingBottom: 50
+  paddingBottom: 50,
+  zIndex: 1,
+  position: 'relative'
+})
+
+export const patternStyle = style({
+  position: 'absolute',
+  top: '130px',
+  right: '90px',
+  opacity: 20,
+  color: '#3333335c',
+  zIndex: 0
 })
