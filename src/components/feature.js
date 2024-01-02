@@ -9,7 +9,7 @@ import {
   Subhead,
   Kicker,
   Text,
-  ButtonList,
+ // ButtonList,
 } from "./ui"
 
 export default function Feature(props) {
@@ -17,7 +17,16 @@ export default function Feature(props) {
     <Section padding={4} background="muted">
       <Container>
         <Flex gap={4} variant="responsive">
-          <Box width="half" order={props.flip ? 1 : null}>
+          <Box 
+            width="half" 
+            order={props.flip ? 1 : null}
+            style={{
+              maxHeight: 280,
+              overflow: 'hidden',
+              borderRadius: 8,
+              boxShadow: '12px 13px #ccdbff',
+            }}
+          >
             {props.image && (
               <GatsbyImage
                 alt={props.image.alt}
@@ -31,7 +40,7 @@ export default function Feature(props) {
               {props.heading}
             </Subhead>
             <Text variant="lead">{props.text}</Text>
-            <ButtonList links={props.links} />
+            {/*<ButtonList links={props.links} />*/}
           </Box>
         </Flex>
       </Container>

@@ -413,10 +413,12 @@ export const text: Record<TextVariants, string> = styleVariants({
 })
 
 export const link = style({
+  /*
   color: "inherit",
   ":hover": {
     color: theme.colors.active,
   },
+  */
 })
 
 export const navlink = style({

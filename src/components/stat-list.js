@@ -4,7 +4,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import {
   Container,
   Section,
-  FlexList,
+ // FlexList,
   Text,
   Kicker,
   Heading,
@@ -15,6 +15,7 @@ import {
   Nudge,
 } from "./ui"
 
+/*
 function Stat(props) {
   return (
     <Box>
@@ -23,12 +24,13 @@ function Stat(props) {
     </Box>
   )
 }
+*/
 
 export default function StatList(props) {
   return (
     <Container width="fullbleed" id="stats">
-      <Section padding={5} radius="large" background="primary">
-        <Flex responsive variant="end">
+      <Section padding={5} background="primary">
+        <Flex responsive >
           <Box width="half">
             {props.icon && (
               <Icon alt={props.icon.alt} image={props.icon.gatsbyImageData} />
@@ -38,18 +40,20 @@ export default function StatList(props) {
               {props.heading}
             </Heading>
             {props.text && <Text variant="lead">{props.text}</Text>}
-            <FlexList wrap gap={4}>
+            {/*
+            <FlexList wrap gap={2}>
               {props.content?.map((stat) => (
                 <li key={stat.id}>
                   <Stat {...stat} />
                 </li>
               ))}
             </FlexList>
+             */}
             <ButtonList links={props.links} reversed />
           </Box>
           <Box width="half">
             {props.image && (
-              <Nudge right={5} bottom={5}>
+              <Nudge right={5} top={0}>
                 <GatsbyImage
                   alt={props.image.alt}
                   image={getImage(props.image.gatsbyImageData)}

@@ -7,7 +7,7 @@ export default function FeatureList(props) {
   return (
     <Container width="fullbleed" id="features">
       <Box background="muted" radius="large">
-        <Box center paddingY={5}>
+        <Box center padding={5}>
           <Heading>
             {props.kicker && <Kicker>{props.kicker}</Kicker>}
             {props.heading}

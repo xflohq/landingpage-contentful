@@ -9,10 +9,12 @@ const gradient = keyframes({
 });
 
 export const heroImage = style({
-  borderRadius: "16px 16px 120px 16px",
+  borderRadius: "16px 16px 70px 16px",
   boxShadow: '12px 13px #70e776',
+  marginRight: 20,
   "@media": {
     [media.small]: {
+      borderRadius: "16px 16px 100px 16px",
     },
   },
 })

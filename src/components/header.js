@@ -20,7 +20,7 @@ import {
   mobileNavSVGColorWrapper,
 } from "./header.css"
 import NavItemGroup from "./nav-item-group"
-import BrandLogo from "./brand-logo"
+// import BrandLogo from "./brand-logo"
 
 export default function Header() {
   const data = useStaticQuery(graphql`
@@ -87,7 +87,7 @@ export default function Header() {
             <FlexList gap={4}>
               <NavLink to='#features'>Product</NavLink>
               <NavLink to='#solution'>Solution</NavLink>
-              <NavLink to='#stats'>About Us</NavLink>
+              <NavLink to='#stats'>About</NavLink>
               {false && navItems &&
                 navItems.map((navItem) => (
                   <li key={navItem.id}>
