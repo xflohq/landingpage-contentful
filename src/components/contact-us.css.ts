@@ -8,7 +8,7 @@ export const formInput= style({
    // width: 'clamp(120px, 50vw, 420px)',
    width: '100%',
     height: '2.5rem',
-    padding: '0 1.25rem',
+    padding: '0 1rem',
     border: '1px solid #000',
     borderRadius: 4,
     margin: '0.625rem auto',
@@ -35,7 +35,7 @@ export const formTextArea= style({
   // width: 'clamp(120px, 50vw, 420px)',
    width: '100%',
   height: '5rem',
-  padding: '0 1.25rem',
+  padding: '1rem',
   border: '1px solid #000',
   borderRadius: 4,
   margin: '0.625rem auto',
@@ -69,7 +69,7 @@ export const formDescription = style({
 })
 
 export const formButton = style({
-
+  border: 'none'
 })
 
 

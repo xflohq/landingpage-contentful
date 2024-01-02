@@ -44,15 +44,10 @@ export default function ContactUs() {
           <Box width="half">
             <form className={styles.formLayout} ref={formRef}  name="contact" method="POST" data-netlify="true" onSubmit={handleSubmit}>
                 <input type="hidden" name="form-name"  value="contact" />
-                  <label className={styles.formLabel}>Name</label>
-                  <input className={styles.formInput} type="text" name="name" />
-                  <label  className={styles.formLabel}>Email</label>
-                  <input className={styles.formInput} type="email" name="email" />
-                  <label className={styles.formLabel}>Message</label>
-                  <textarea className={styles.formTextArea} name="message"></textarea>
-                  <div className={styles.formButton} >
-                    <Button type="submit">Send</Button>
-                  </div>
+                <label className={styles.formLabel} for="name">Name <input className={styles.formInput} type="text" name="name" id="name"/> </label>
+                <label  className={styles.formLabel} for="email">Email <input className={styles.formInput} type="email" name="email" id="email"/></label>
+                <label className={styles.formLabel} for="message">Message <textarea className={styles.formTextArea} name="message" id="message" /></label>
+                <Button type="submit" as={'button'} className={styles.formButton}>Send</Button>
             </form>
           </Box>
         </Flex>
