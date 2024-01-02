@@ -13,8 +13,6 @@ export const formInput= style({
     borderRadius: 4,
     margin: '0.625rem auto',
     transition: 'all 250ms',
-    
-    // This is basically saying when the form__input class is in focus
     ':focus': {
       outline: 'none',
      // borderTopColor: 'rgba(0,0,0,0.1)'
@@ -40,8 +38,6 @@ export const formTextArea= style({
   borderRadius: 4,
   margin: '0.625rem auto',
   transition: 'all 250ms',
-  
-  // This is basically saying when the form__input class is in focus
   ':focus': {
     outline: 'none',
    // borderTopColor: 'rgba(0,0,0,0.1)'
