@@ -27,6 +27,7 @@ function Stat(props) {
 */
 
 export default function StatList(props) {
+  console.log('props.image', props.image)
   return (
     <Container width="fullbleed" id="stats">
       <Section padding={5} background="primary">

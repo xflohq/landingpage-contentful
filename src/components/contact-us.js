@@ -14,22 +14,17 @@ export default function ContactUs() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-  
     const myForm = event.target;
     const formData = new FormData(myForm);
-  
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData).toString(),
     })
     .then(() => alert("Thank you for contacting us. One of our colleagues will get back in touch with you soon! Have a great day!"))
-    // .then((result) => console.log('result', result))
      // .then(() => navigate("/thank-you/"))
       .catch((error) => alert(error));
   };
-
-
 
   return (
     <Box background="primary"  as="contact-us" paddingY={4}>
