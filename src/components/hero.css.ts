@@ -35,7 +35,6 @@ export const containerStyle = style({
   // marginTop: 30
   paddingTop: 50,
   paddingBottom: 50,
-  zIndex: 1,
   position: 'relative'
 })
 
@@ -45,5 +44,4 @@ export const patternStyle = style({
   right: '90px',
   opacity: 20,
   color: '#3333335c',
-  zIndex: 0
 })
