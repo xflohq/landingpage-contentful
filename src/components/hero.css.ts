@@ -10,7 +10,7 @@ const gradient = keyframes({
 
 export const heroImage = style({
   borderRadius: "16px 16px 70px 16px",
-  boxShadow: '12px 13px #70e776',
+ // boxShadow: '12px 13px #b8a4de', // #70e776',
   marginRight: 20,
   "@media": {
     [media.small]: {
@@ -20,7 +20,7 @@ export const heroImage = style({
 })
 
 export const sectionStyle = style({
-  background: "#0e0f18",
+ // background: "#0e0f18",
  // background: "#0d131e",
 // background: "linear-gradient(#fff,#eef1f5 87%)",
 	//background: "linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)",
@@ -28,7 +28,7 @@ export const sectionStyle = style({
 	backgroundSize: "400% 400%",
 	// animation: `${gradient} 45s ease infinite`,
 	// height: "75vh",
-  color: "#FFFFFF"
+ // color: "#FFFFFF"
 })
 
 export const containerStyle = style({
@@ -43,5 +43,5 @@ export const patternStyle = style({
   top: '130px',
   right: '90px',
   opacity: 20,
-  color: '#3333335c',
+  color: '#DDDDDD5c',
 })

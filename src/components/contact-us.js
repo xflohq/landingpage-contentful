@@ -34,6 +34,7 @@ export default function ContactUs() {
             <div className={styles.formDescription}>
               <h1>Talk to Us!</h1> 
               <p style={{ fontSize: 20 }}>Drop us a line to know more about our product and how we can improve your business operations. One of our colleagues will get back in touch with you soon!</p>
+              <h3 className={styles.formDescriptionHighlight}>Receive 2 months free plus special perks when you join our early access program! </h3>
             </div>
           </Box>
           <Box width="half">

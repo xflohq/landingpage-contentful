@@ -7,9 +7,9 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     siteUrl: "https://gatsbycontentfulhomepage.gatsbyjs.io/",
-    title: "Procure-to-pay hyperautomation platform | XFLO",
+    title: "XFLO | Procure-to-pay hyperautomation platform",
     author: `XFLO`,
-    description: "Procure-to-pay hyperautomation platform",
+    description: "XFLO | Procure-to-pay hyperautomation platform",
   },
   plugins: [
     {
@@ -28,7 +28,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        name: "Procure-to-pay hyperautomation platform | XFLO",
+        name: "XFLO | Procure-to-pay hyperautomation platform",
         short_name: "Gatsby",
         start_url: "/",
         // These can be imported once ESM support lands

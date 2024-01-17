@@ -12,7 +12,8 @@ export default function FeatureList(props) {
             {props.kicker && <Kicker>{props.kicker}</Kicker>}
             {props.heading}
           </Heading>
-          {props.text && <Text>{props.text}</Text>}
+          {/*props.text && <Text>{props.text}</Text>*/}
+          Create and automate workflows to manage and onboard new vendors, match purchase orders to invoices, and process payments faster.
         </Box>
         {props.content?.map((feature, i) => (
           <Feature key={feature.id} {...feature} flip={Boolean(i % 2)} />

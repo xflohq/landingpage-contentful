@@ -1,7 +1,7 @@
 import { graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import * as React from "react"
-import { Slice } from "gatsby"
+// import { Slice } from "gatsby"
 import { heroImage, sectionStyle, containerStyle, patternStyle } from "./hero.css"
 import {
   Box,
@@ -33,12 +33,17 @@ export default function Hero(props) {
           </Box>
           <Box width="half">
             <Heading as="h1">
-              {props.kicker && <Kicker>{props.kicker}</Kicker>}
+              {/*props.kicker && <Kicker>{props.kicker}</Kicker>*/}
               {props.h1}
             </Heading>
-            <Subhead as="h2">{props.subhead}</Subhead>
-            <Text as="p">{props.text}</Text>
-            <ButtonList links={props.links} />
+            <Subhead as="h2">
+              {/*props.subhead*/}
+            </Subhead>
+            <Text as="p">
+              {/*props.text*/}
+              Empowering businesses to turbocharge productivity through the automation of financial and operational processes
+            </Text>
+            <ButtonList links={props.links}  />
           </Box>
         </Flex>
       </Container>

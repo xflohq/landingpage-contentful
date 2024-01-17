@@ -36,7 +36,7 @@ export default function StatList(props) {
               <Icon alt={props.icon.alt} image={props.icon.gatsbyImageData} />
             )}
             <Heading>
-              {props.kicker && <Kicker>{props.kicker}</Kicker>}
+              {false && props.kicker && <Kicker>{props.kicker}</Kicker>}
               {props.heading}
             </Heading>
             {props.text && <Text variant="lead">{props.text}</Text>}

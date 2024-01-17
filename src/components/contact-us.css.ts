@@ -4,12 +4,14 @@ import { media } from "./ui.css"
 
 
 export const formInput= style({
+
     display: 'block',
    // width: 'clamp(120px, 50vw, 420px)',
    width: '100%',
     height: '2.5rem',
     padding: '0 1rem',
     border: '1px solid #000',
+    borderColor: theme.colors.primary,
     borderRadius: 4,
     margin: '0.625rem auto',
     transition: 'all 250ms',
@@ -35,6 +37,7 @@ export const formTextArea= style({
   height: '5rem',
   padding: '1rem',
   border: '1px solid #000',
+  borderColor: theme.colors.primary,
   borderRadius: 4,
   margin: '0.625rem auto',
   transition: 'all 250ms',
@@ -56,13 +59,17 @@ export const formTextArea= style({
 export const formLabel = style({
 
   fontSize: '1rem',
-  color: '#666',
-  display: 'block',
+  color: theme.colors.primary,
+  display: 'block'
   
 })
 
 export const formDescription = style({
 })
+export const formDescriptionHighlight = style({
+  color: theme.colors.backgroundBright,
+})
+
 
 export const formButton = style({
   border: 'none'

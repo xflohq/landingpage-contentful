@@ -422,9 +422,9 @@ export const link = style({
 })
 
 export const navlink = style({
-  // color: "inherit",
+  color: "inherit",
   //color: theme.colors.active,
-  color: '#FFF',
+  // color: '#FFF',
   textDecoration: "none",
   transitionProperty: "color",
   transitionDuration: "0.2s",
@@ -435,8 +435,8 @@ export const navlink = style({
   justifyContent: 'space-between',
   // fontWeight: 800,
   ":hover": {
-    // color: theme.colors.active,
-    color: '#fff'
+    color: theme.colors.active,
+    // color: '#fff'
   },
 })
 
@@ -519,7 +519,8 @@ export const buttons: Record<ButtonVariants, string> = styleVariants({
     button,
     {
       color: "inherit",
-      backgroundColor: "transparent",
+      backgroundColor: theme.colors.muted,
+      fontWeight: '800',
       ":hover": {
         backgroundColor: theme.colors.muted,
       },

@@ -168,7 +168,7 @@ export function Button({ variant = "primary", ...props }) {
 export function ButtonList({ links = [], reversed = false, ...props }) {
   const getVariant = (i) => {
     if (reversed) {
-      return i === 0 ? "reversed" : "linkReversed"
+      return i === 0 ? "reversed" : "primary"
     }
     return i === 0 ? "primary" : "link"
   }
