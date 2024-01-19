@@ -69,6 +69,12 @@ export const mobileNavLink = style({
   paddingRight: theme.space[4]
 })
 
-export const ctaStyle = style({
+export const desktopCtaStyle = style({
   background: theme.colors.backgroundBright,
+})
+
+export const mobileCtaStyle = style({
+  background: theme.colors.backgroundBright,
+  padding: 12,
+  fontSize: 12
 })

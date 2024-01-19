@@ -18,7 +18,8 @@ import {
   desktopHeaderNavWrapper,
   mobileHeaderNavWrapper,
   mobileNavSVGColorWrapper,
-  ctaStyle
+  desktopCtaStyle,
+  mobileCtaStyle
 } from "./header.css"
 import NavItemGroup from "./nav-item-group"
 // import BrandLogo from "./brand-logo"
@@ -108,7 +109,7 @@ export default function Header() {
                 ))}
             </FlexList>
           </nav>
-          <div>{cta && <Button to="#contact-us" className={ctaStyle}>{cta.text}</Button>}</div>
+          <div>{cta && <Button to="#contact-us" className={desktopCtaStyle}>{cta.text}</Button>}</div>
           {/*<div>{cta && <Button to={cta.href}>{cta.text}</Button>}</div>*/}
         </Flex>
       </Container>
@@ -142,7 +143,7 @@ export default function Header() {
             <Space />
             <div>
               {cta && (
-                <Button to={cta.href} className={ctaStyle} variant={isOpen ? "reversed" : "primary"}>
+                <Button to={cta.href} className={mobileCtaStyle} variant={isOpen ? "reversed" : "primary"}>
                   {cta.text}
                 </Button>
               )}
