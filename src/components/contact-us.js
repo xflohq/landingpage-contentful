@@ -29,17 +29,18 @@ export default function ContactUs() {
   };
 
   return (
-    <Box background="primary"  as="contact-us" paddingY={4}>
+    <Box background="primary"  as="contact-us" >
       <Container  id="contact-us">
+      <Space size={5} />
       <Flex gap={4} variant="responsive">
           <Box width="half">
             <div className={styles.formDescription}>
               <Heading>
-              <Kicker>Join Early Access</Kicker>
+              <Kicker>Get Early Access</Kicker>
                 Talk to Us! 
               </Heading>
               <p style={{ fontSize: 20, marginTop: 40 }}>Drop us a line to know more about our product and how we can improve your business operations. One of our colleagues will get back in touch with you soon!</p>
-              <h3 className={styles.formDescriptionHighlight}>Receive 2 months free plus special perks when you join our early access program! </h3>
+              <h3 className={styles.formDescriptionHighlight}>👋 &nbsp;Receive 2 months free plus special perks when you join our early access program! </h3>
             </div>
           </Box>
           <Box width="half">

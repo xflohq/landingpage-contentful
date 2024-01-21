@@ -29,18 +29,24 @@ function Stat(props) {
 
 export default function StatList(props) {
   return (
-    <Container width="fullbleed" id="stats">
-      <Section padding={5} background="primary">
+    <Section padding={50} background="primary">
+    <Container id="stats">
         <Flex responsive >
           <Box width="half">
             {props.icon && (
               <Icon alt={props.icon.alt} image={props.icon.gatsbyImageData} />
             )}
             <Heading>
-              {false && props.kicker && <Kicker>{props.kicker}</Kicker>}
+              {props.kicker && <Kicker>{props.kicker}</Kicker>}
               {props.heading}
             </Heading>
-            {props.text && <Text variant="lead">{props.text}</Text>}
+            {false && props.text && <Text variant="lead">{props.text}</Text>}
+            <Text variant="lead">
+            xflo empowers businesses to supercharge productivity through the automation of financial and operational processes.   
+            </Text>
+            <Text variant="lead">
+Our integrated Procure-to-Pay (“P2P”) solution offers a collaborative platform, underpinned by an AI-enabled hyperautomated workflow engine. 
+            </Text>
             {/*
             <FlexList wrap gap={2}>
               {props.content?.map((stat) => (
@@ -75,8 +81,8 @@ export default function StatList(props) {
             )}
           </Box>
         </Flex>
-      </Section>
     </Container>
+      </Section>
   )
 }
 

@@ -33,8 +33,9 @@ export default function BenefitList(props) {
     <Section>
       <Container id="benefits">
         <Box center>
-          {props.heading && <Heading>{props.heading}</Heading>}
-          {props.text && <Text variant="lead">{props.text}</Text>}
+          <Heading>End-to-end procure-to-pay platform</Heading>
+          {false && props.heading && <Heading>{props.heading}</Heading>}
+          {false && props.text && <Text variant="lead">{props.text}</Text>}
         </Box>
         <Space size={3} />
         <FlexList gutter={3} variant="start" responsive wrap>

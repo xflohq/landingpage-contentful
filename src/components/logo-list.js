@@ -19,7 +19,6 @@ export default function LogoList(props) {
             {props.text}
           </Text>
         )}
-        {/*
         <Space size={4} />
         <FlexList gap={4} variant="center">
           {props.logos.map(
@@ -31,7 +30,6 @@ export default function LogoList(props) {
               )
           )}
         </FlexList>
-        */}
       </Container>
     </Section>
   )
