@@ -139,7 +139,7 @@ export default function Header() {
             <span style={{ marginLeft: 10, fontSize: 30, fontWeight: 800 }}>xflo</span>
             </NavLink>
           </span>
-          <Flex>
+          <Flex gap={1}>
             <Space />
             <div>
               {cta && (

@@ -14,6 +14,7 @@ import {
   ButtonList,
   Nudge,
 } from "./ui"
+import * as styles from "./stat-list.css"
 
 /*
 function Stat(props) {
@@ -53,12 +54,24 @@ export default function StatList(props) {
           </Box>
           <Box width="half">
             {props.image && (
-              <Nudge right={5} top={0}>
-                <GatsbyImage
-                  alt={props.image.alt}
-                  image={getImage(props.image.gatsbyImageData)}
-                />
-              </Nudge>
+              <>
+              <div className={styles.desktopStatImage}>
+                <Nudge right={5} top={0}>
+                  <GatsbyImage
+                    alt={props.image.alt}
+                    image={getImage(props.image.gatsbyImageData)}
+                  />
+                </Nudge>
+              </div>
+              <div className={styles.mobileStatImage}>
+                <Nudge top={0}>
+                  <GatsbyImage
+                    alt={props.image.alt}
+                    image={getImage(props.image.gatsbyImageData)}
+                  />
+                </Nudge>
+              </div>
+              </>
             )}
           </Box>
         </Flex>

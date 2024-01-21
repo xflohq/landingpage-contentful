@@ -44,4 +44,10 @@ export const patternStyle = style({
   right: '90px',
   opacity: 20,
   color: '#DDDDDD5c',
+  display: "none",
+  "@media": {
+    [media.small]: {
+      display: "block",
+    },
+  },
 })

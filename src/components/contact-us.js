@@ -5,6 +5,8 @@ import {
   Box,
   Space,
   Button,
+  Kicker,
+  Heading
 } from "./ui"
 import * as styles from "./contact-us.css"
 
@@ -32,8 +34,11 @@ export default function ContactUs() {
       <Flex gap={4} variant="responsive">
           <Box width="half">
             <div className={styles.formDescription}>
-              <h1>Talk to Us!</h1> 
-              <p style={{ fontSize: 20 }}>Drop us a line to know more about our product and how we can improve your business operations. One of our colleagues will get back in touch with you soon!</p>
+              <Heading>
+              <Kicker>Join Early Access</Kicker>
+                Talk to Us! 
+              </Heading>
+              <p style={{ fontSize: 20, marginTop: 40 }}>Drop us a line to know more about our product and how we can improve your business operations. One of our colleagues will get back in touch with you soon!</p>
               <h3 className={styles.formDescriptionHighlight}>Receive 2 months free plus special perks when you join our early access program! </h3>
             </div>
           </Box>
@@ -42,6 +47,7 @@ export default function ContactUs() {
                 <input type="hidden" name="form-name"  value="contact" />
                 <label className={styles.formLabel} for="name">Name <input className={styles.formInput} type="text" name="name" id="name"/> </label>
                 <label  className={styles.formLabel} for="email">Email <input className={styles.formInput} type="email" name="email" id="email"/></label>
+                <label  className={styles.formLabel} for="email">Company <input className={styles.formInput} type="text" name="company" id="company"/></label>
                 <label className={styles.formLabel} for="message">Message <textarea className={styles.formTextArea} name="message" id="message" /></label>
                 <Button type="submit" as={'button'} className={styles.formButton}>Send</Button>
             </form>

@@ -33,7 +33,7 @@ export default function Hero(props) {
           </Box>
           <Box width="half">
             <Heading as="h1">
-              {/*props.kicker && <Kicker>{props.kicker}</Kicker>*/}
+              {props.kicker && <Kicker>{props.kicker}</Kicker>}
               {props.h1}
             </Heading>
             <Subhead as="h2">

@@ -74,7 +74,6 @@ export const desktopCtaStyle = style({
 })
 
 export const mobileCtaStyle = style({
-  background: theme.colors.backgroundBright,
   padding: 12,
   fontSize: 12
 })
