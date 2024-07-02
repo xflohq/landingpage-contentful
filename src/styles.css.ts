@@ -1,6 +1,12 @@
 import { globalStyle, globalKeyframes } from "@vanilla-extract/css"
 import { theme } from "./theme.css"
 
+globalStyle("html", {
+  width: "100%",
+  height: "100%",
+  overflow: "hidden"
+})
+
 globalStyle("body", {
   margin: 0,
   fontFamily: theme.fonts.text,
@@ -8,10 +14,16 @@ globalStyle("body", {
   backgroundColor: theme.colors.background,
   WebkitFontSmoothing: "antialiased",
   MozOsxFontSmoothing: "grayscale",
+  width: "100%",
+  height: "100%",
+  overflow: "hidden"
 })
 
 globalStyle("*", {
   boxSizing: "border-box",
+  width: "100%",
+  height: "100%",
+  overflow: "hidden"
 })
 
 globalKeyframes("zoomInUp", {

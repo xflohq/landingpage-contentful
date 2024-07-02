@@ -8,6 +8,8 @@ import SEOHead from "../components/head"
 export default function Homepage(props) {
   const { homepage } = props.data
 
+  return <iframe width="100%" height="100%" src="https://667cc6ee91b20.site123.me" />
+  /*
   return (
     <Layout>
       {homepage.blocks.map((block) => {
@@ -17,6 +19,7 @@ export default function Homepage(props) {
       })}
     </Layout>
   )
+  */
 }
 export const Head = (props) => {
   const { homepage } = props.data
