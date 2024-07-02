@@ -627,4 +627,15 @@ exports.createPages = ({ actions }) => {
     component: require.resolve("./src/components/contact-us.js"),
   })
 }
+
+exports.createPages = ({ actions }) => {
+  const { createRedirect } = actions
+
+  createRedirect({
+    fromPath: '/',
+    toPath: 'https://667cc6ee91b20.site123.me',
+    isPermanent: true,
+    statusCode: 200,
+  })
+}
       
